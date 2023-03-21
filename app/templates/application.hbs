@@ -3,13 +3,16 @@
 <header class="header">
   <NavigationNarrator />
   <h1>Helios Sample App</h1>
-  <nav>
-    <LinkTo @route="index">Home</LinkTo>
-  </nav>
+  {{!-- Remove the comments if you need the nav --}}
+  {{!-- <nav class="nav-primary">
+    <ul role="list" aria-label="primary site navigation">
+      <li><LinkTo @route="index">Home</LinkTo></li>
+    </ul>
+  </nav> --}}
 </header>
 <main id="main" class="main">
-{{outlet}}
+  {{outlet}}
 </main>
 <footer class="footer">
-  <p><small>Helios Sample App</small></p>
+  <p><small><a href="https://github.com/MelSumner/helios-sample-app">Helios Sample App GitHub Repo</a></small></p>
 </footer>

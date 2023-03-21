@@ -47,13 +47,28 @@ footer,header,main {
     padding-left:15%;
     padding-right: 15%
   }
-  
+
   @media screen and (min-width: 1280px) {
     padding-left:20%;
     padding-right: 20%
   }
 }
 
+footer, header {
+  background-color: black;
+  color: white;
+}
 
+footer a {
+  color: var(--token-color-surface-action);
+
+  &:hover {
+    color: var(--token-color-surface-interactive-hover);
+  }
+
+  &:active {
+    color: var(--token-color-surface-interactive-active);
+  }
+}
 
 

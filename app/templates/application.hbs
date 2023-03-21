@@ -1,7 +1,15 @@
-{{page-title "HeliosSampleApp"}}
+{{page-title "Helios Sample App"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<header class="header">
+  <NavigationNarrator />
+  <h1>Helios Sample App</h1>
+  <nav>
+    <LinkTo @route="index">Home</LinkTo>
+  </nav>
+</header>
+<main id="main" class="main">
 {{outlet}}
+</main>
+<footer class="footer">
+  <p><small>Helios Sample App</small></p>
+</footer>

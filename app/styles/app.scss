@@ -1,0 +1,59 @@
+@import "@hashicorp/design-system-components";
+@import "@hashicorp/design-system-tokens/dist/products/css/tokens";
+
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--token-typography-body-300-font-family);
+  font-size: var(--token-typography-body-300-font-size);
+  line-height: var(--token-typography-body-300-line-height);
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 90vh auto;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-areas: "header" "main" "footer"
+}
+
+.header {
+  grid-area: header
+}
+
+.main {
+  grid-area: main
+}
+
+.footer {
+  grid-area: footer
+}
+
+footer,header,main {
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+
+  @media screen and (min-width: 40em) {
+    padding-left: 10%;
+    padding-right: 10%
+  }
+
+  @media screen and (min-width: 52em) { 
+    padding-left:15%;
+    padding-right: 15%
+  }
+  
+  @media screen and (min-width: 1280px) {
+    padding-left:20%;
+    padding-right: 20%
+  }
+}
+
+
+
+

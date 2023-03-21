@@ -1,7 +1,8 @@
 # helios-sample-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a sample base app that uses HashiCorp's [Helios Design System](https://helios.hashicorp.design/).
+
+It also uses [ember-a11y-refocus](https://github.com/ember-a11y/ember-a11y-refocus) for accessible routing.
 
 ## Prerequisites
 
